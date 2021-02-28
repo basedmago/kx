@@ -3,6 +3,113 @@
 ideas = {
 	### Country ideas
 	country = {
+		### Death of Carroll ####
+		TEX_blessed_are_the_peacebois = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_compromisejustworksIguess"}
+			picture = TEX_blessed_are_peacebois
+			modifier = {
+				consumer_goods_factor = -0.15
+				defence	= 0.20
+				dig_in_speed_factor = 0.30
+			}
+		}
+		TEX_compromisejustworksIguess = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_compromisejustworksIguess"}
+			picture = SHX_christian_statism
+			modifier = {
+				enemy_partisan_effect = -0.15
+				partisan_effect	= 0.15
+				political_power_cost = -0.20
+			}
+		}
+		TEX_catharmyfirst = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_catharmyfirst"}
+			picture = citizen_army_idea
+			modifier = {
+				non_core_manpower = 0.05
+				out_of_supply_factor = 0.1
+				surrender_limit = 0.1
+			}
+		}
+		TEX_blessed_are_the_radtrads = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_blessed_are_the_radtrads"}
+			picture = TEX_radtradgang
+			modifier = {
+				research_speed_factor = 0.10
+				industrial_capacity_factory = 0.15
+				surrender_limit = 0.1
+			}
+		}
+		TEX_outsideofthechurchbtfd = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_outsideofthechurchbtfd"}
+			picture = IRE_catholic
+			modifier = {
+				global_building_slots_factor = 0.1
+				local_resources_factor = 0.1
+				stability_factor = -0.15
+			}
+		}
+		TEX_cathfuntimesinmedivalland = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_cathfuntimesinmedivalland"}
+			picture = LIT_crown_4
+			modifier = {
+				global_building_slots_factor = 0.1
+				local_resources_factor = 0.1
+				stability_factor = -0.15
+			}
+		}
+		TEX_we_live_in_a_red_society = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_we_live_in_a_red_society"}
+			picture = generic_syndicalist_monarchy
+			modifier = {
+				political_power_factor = 0.10
+			    production_factory_efficiency_gain_factor = 0.10
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		TEX_we_live_in_a_federal_society = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_we_live_in_a_federal_society"}
+			picture = christian_commonwealth
+			modifier = {
+				political_power_factor = 0.10
+			    add_stability = 0.10
+				army_core_defence_factor = 0.10
+			}
+		}
+		TEX_blessed_are_the_meek = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_blessed_are_the_meek"}
+			picture = TEX_meekreformgang
+			modifier = {
+				monthly_population = 0.10
+			    add_stability = 0.10
+				consumer_goods_factor = -0.10
+				
+			}
+		}
+		TEX_based_sheen_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_based_sheen_idea"}
+			picture = new_america
+			modifier = {
+				monthly_population = 0.05
+			    add_stability_factor = 0.10
+			}
+		}
+		TEX_cathamerica_first_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_cathamerica_first_idea"}
+			picture = american_democracy
+			modifier = {
+			    political_power_factor = 0.10
+				war_support_factor = 0.10
+			}
+		}
+		TEX_blessed_are_the_based = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_blessed_are_pure_idea"}
+			picture = TEX_basedcatholicsamiright
+			modifier = {
+			    army_attack_factor = 0.10
+				political_power_gain = 0.15
+			}
+		}
 		### Army Tree ###
 		TEX_Devers_plan1 = { #Devers Plan
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_Devers_plan1"}
@@ -672,6 +779,342 @@ ideas = {
 				political_power_cost = 0.10
 				training_time_army_factor = 0.05
 				army_morale_factor = 0.03
+			}
+		}
+		### W. Lee O'Daniel Ideas ###
+		TEX_four_point_plan_deficit = { #Four Point Plan
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_four_point_plan_deficit"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = usa_great_depression_2
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.01
+				party_popularity_stability_factor = -0.05
+				local_resources = 0.03
+				industrial_capacity_factory = 0.03
+				production_factory_max_efficiency_factor = 0.02
+				conversion_cost_civ_to_mil_factor = -0.05
+				production_speed_buildings_factor = 0.03
+			}
+		}
+		TEX_four_point_plan_deficit_two = { #Five Point Plan
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_four_point_plan_deficit_two"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = usa_great_depression_2
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.03
+				party_popularity_stability_factor = 0.02
+				local_resources = 0.06
+				industrial_capacity_factory = 0.06
+				production_factory_max_efficiency_factor = 0.05
+				conversion_cost_civ_to_mil_factor = -0.10
+				production_speed_buildings_factor = 0.05
+				local_intel_to_enemies = -0.05
+			}
+		}
+		TEX_four_point_plan_revenue = { #Four Point Plan
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_four_point_plan_revenue"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = usa_great_depression_2
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.01
+				party_popularity_stability_factor = 0.02
+				local_resources = -0.01
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.03
+				conversion_cost_civ_to_mil_factor = -0.05
+				production_speed_buildings_factor = -0.02
+			}
+		}
+		TEX_four_point_plan_revenue_two = { #Five Point Plan
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_four_point_plan_revenue_two"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = usa_great_depression_2
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.05
+				party_popularity_stability_factor = 0.05
+				local_resources = 0.02
+				industrial_capacity_factory = 0.06
+				production_factory_max_efficiency_factor = 0.06
+				conversion_cost_civ_to_mil_factor = -0.10
+				production_speed_buildings_factor = 0.03
+				local_intel_to_enemies = -0.05
+			}
+		}
+		TEX_four_point_plan_punishment = { #Four Point Plan
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_four_point_plan_punishment"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = usa_great_depression_2
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.03
+				party_popularity_stability_factor = 0.02
+				local_resources = 0.01
+				industrial_capacity_factory = 0.03
+				production_factory_max_efficiency_factor = 0.03
+				conversion_cost_civ_to_mil_factor = -0.05
+				production_speed_buildings_factor = 0.03
+				local_intel_to_enemies = 0.05
+			}
+		}
+		TEX_four_point_plan_punishment_two = { #Five Point Plan
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_four_point_plan_punishment_two"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = usa_great_depression_2
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.05
+				party_popularity_stability_factor = 0.10
+				local_resources = 0.04
+				industrial_capacity_factory = 0.06
+				production_factory_max_efficiency_factor = 0.05
+				conversion_cost_civ_to_mil_factor = -0.10
+				production_speed_buildings_factor = 0.05
+				local_intel_to_enemies = -0.05
+			}
+		}
+		TEX_dependent_disability_act = { #The Dependent & Disability Act
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_dependent_disability_act"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = BBR_veteran_support
+			modifier = {
+				army_morale_factor = 0.05
+				political_power_gain = 0.03
+				monthly_population = 0.05
+				max_command_power = 10
+			}
+		}
+		TEX_industrialization_committees_idea = { #Industrialization Committees
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_industrialization_committees_idea"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				industrial_capacity_factory = 0.03
+				production_speed_industrial_complex_factor = 0.12
+				production_speed_arms_factory_factor = 0.12
+				production_speed_dockyard_factor = 0.06
+				production_speed_fuel_silo_factor = 0.06
+			}
+		}
+		TEX_texas_values_idea = { #Texas Values
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_radio_idea"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = texasvalues
+			modifier = {
+				army_morale_factor = 0.05
+				political_power_gain = 0.03
+				weekly_manpower = 25
+				recon_factor = 0.02
+				heat_attrition_factor = -0.05
+			}
+		}
+		TEX_radio_idea = { #Radio Showmanship
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_radio_idea"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = minutemen
+			modifier = {
+				decryption_factor = 0.01
+				encryption_factor = 0.01
+				political_power_gain = 0.05
+				weekly_manpower = 25
+				war_stability_factor = 0.10
+				forced_surrender_limit = 0.05
+			}
+		}
+		TEX_sunday_broadcast_idea = { #Radio Showmanship
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_sunday_broadcast_idea"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = minutemen
+			modifier = {
+				decryption_factor = 0.03
+				encryption_factor = 0.03
+				political_power_gain = 0.07
+				weekly_manpower = 40
+				war_stability_factor = 0.15
+				forced_surrender_limit = 0.10
+				party_popularity_stability_factor = 0.05
+			}
+		}
+		TEX_farmer_support_idea = { #Power to Farmers
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_farmer_support_idea"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = agricultural_committee
+			modifier = {
+				supply_consumption_factor = -0.03
+				land_reinforce_rate = 0.03
+				attrition = -0.03
+			}
+		}
+		TEX_support_whites_idea = { #Protect Poor Whites
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_support_whites_idea"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = agricultural_committee
+			modifier = {
+				monthly_population = 0.05
+				supply_consumption_factor = -0.06
+				land_reinforce_rate = 0.05
+				consumer_goods_factor = 0.03
+				army_morale_factor = 0.03
+				attrition = -0.05
+				production_factory_start_efficiency_factor = 0.02
+			}
+		}
+		TEX_wasteful_spending_military = { #Wasteful Spending: To The Military
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_farmer_support_idea"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = syndicalist_industry_idea
+			modifier = {
+				recruitable_population_factor = 0.03
+				production_speed_arms_factory_factor = 0.03
+				conversion_cost_civ_to_mil_factor = -0.05
+			}
+		}
+		TEX_wasteful_spending_people = { #Wasteful Spending: To The People
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_farmer_support_idea"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_war_preparation
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.03
+				conversion_cost_mil_to_civ_factor = -0.05
+			}
+		}
+		TEX_business_taxcuts = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_business_taxcuts"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_build_infrastructure
+			modifier = {
+				industrial_capacity_factory = 0.03
+				production_factory_start_efficiency_factor = 0.03
+				local_supplies = 0.05
+				industry_free_repair_factor = 0.04
+				political_power_gain = -0.02
+				consumer_goods_factor = 0.03
+			}
+		}
+		TEX_finance_industry_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_finance_industry_idea"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_build_infrastructure
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.03
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.02
+				stability_factor = -0.02
+			}
+			research_bonus = {
+				industry = 0.05
+			}
+		}
+		TEX_construction_industry_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_construction_industry_idea"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_build_infrastructure
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industry_repair_factor = 0.03
+				local_factories = 0.03
+			}
+			research_bonus = {
+				construction_tech = 0.1
+			}
+		}
+		TEX_oil_industry_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_oil_industry_idea"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_build_infrastructure
+			modifier = {
+				production_oil_factor = 0.05
+				base_fuel_gain_factor = 0.03
+				max_fuel_factor = 0.03
+			}
+			research_bonus = {
+				excavation_tech = 0.1
+			}
+		}
+		TEX_soil_conservation_act_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_soil_conservation_act_idea"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_build_infrastructure
+			modifier = {
+				conscription = 0.02
+				local_resources = 0.05
+				out_of_supply_factor = -0.06
+				monthly_population = 0.10
+				local_supplies = -0.02
+			}
+		}
+		TEX_helping_needy_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_helping_needy_idea"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = public_education
+			modifier = {
+				research_speed_factor = 0.05
+				production_factory_start_efficiency_factor = 0.03
+				monthly_population = 0.02
+				stability_weekly = 0.002
+			}
+		}
+		TEX_oil_boom_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_oil_boom_idea"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = national_oil
+			modifier = {
+				production_oil_factor = 0.05
+				fuel_gain_factor = 0.05
+				max_fuel_factor = 0.03
+				out_of_supply_factor = -0.02
+			}
+		}
+		TEX_christian_influence_idea = { #Ten Commandments
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_christian_influence_idea"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = SHX_christian_statism
+			modifier = {
+				stability_weekly_factor = 0.001
+				monthly_population = 0.05
+				enemy_justify_war_goal_time = 0.10
+				org_loss_when_moving = -0.03
+				production_lack_of_resource_penalty_factor = -0.03
+				industrial_capacity_factory = -0.02
+			}
+		}
+		TEX_concert_idea = { #Concerts
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_concert_idea"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = SHX_christian_statism
+			modifier = {
+				political_power_gain = 0.03
+				party_popularity_stability_factor = 0.05
+				root_out_resistance_effectiveness_factor = 0.05
+				army_morale_factor = 0.02
 			}
 		}
 		### Huey Long Ideas ###
@@ -1591,8 +2034,8 @@ ideas = {
 		}
 		     ### pHILIP Ideas ###
 	        TEX_unpopular_government_idea = { #Orange Menace
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea  TEX_unpopular_government_idea"}
-			available = { has_government = national_populist }
+			
+		      on_add ={ log = "[GetDateText]: [Root.GetName]: add idea  TEX_unpopular_government_idea"}
 			picture = saf_history_of_segregation
 			modifier = {
 				industrial_capacity_factory = -0.15
@@ -1602,7 +2045,6 @@ ideas = {
                 }
 	        TEX_orange_menace_idea = { #Orange Menace
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_orange_menace_idea"}
-			available = { has_government = national_populist }
 			picture = saf_history_of_segregation
 			modifier = {
 				conscription_factor = -0.05
@@ -1614,7 +2056,6 @@ ideas = {
                 }
 	        TEX_foreign_lifeline_idea = { #Foreign Lifeline
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea  TEX_foreign_lifeline_idea"}
-			available = { has_government = national_populist }
 			picture = saf_history_of_segregation
 			modifier = {
 				industrial_capacity_factory = -0.05
@@ -1625,7 +2066,6 @@ ideas = {
                 }
 		TEX_koc_idea = { #Minutmen
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_koc_idea"}
-			available = { has_government = national_populist }
 			picture = generic_secret_police
 			modifier = {
 				conscription_factor = 0.10
@@ -1637,7 +2077,6 @@ ideas = {
 		}
 		TEX_catholic_education_idea = { #Populist Education
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_catholic_education_idea"}
-			available = { has_government = national_populist }
 			picture = generic_secret_police
 			modifier = {
 				research_speed_factor = 0.05
@@ -1645,7 +2084,6 @@ ideas = {
 		}
 		TEX_catholic_america_idea = { #National Political machine
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_catholic_america_idea"}
-			available = { has_government = national_populist }
 			picture = generic_pp_unity_bonus
 			modifier = {
 				political_power_gain = 0.15
@@ -1654,7 +2092,6 @@ ideas = {
 		}
 		TEX_catholic_unions_idea = { #Share the Wealth
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_catholic_unions_idea"}
-			available = { has_government = national_populist }
 			picture = generic_pp_unity_bonus
 			modifier = {
 				consumer_goods_factor = -0.05
@@ -1663,7 +2100,6 @@ ideas = {
 		}
 		TEX_distributism_idea = { #economic Things
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_distributism_idea"}
-			available = { has_government = national_populist }
 			picture = generic_army_war_college
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.10
@@ -1672,8 +2108,7 @@ ideas = {
 			}
 		}
 		TEX_christ_the_king_idea = { #CHRISTUS REX
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_distributism_idea"}
-			available = { has_government = national_populist }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_christ_the_king_idea"}
 			picture = TEX_christ_the_king
 			modifier = {
 				defence = 0.10
@@ -1683,7 +2118,6 @@ ideas = {
 		}
 		TEX_philipregent_idea = { #Regent Carroll
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TEX_philipregent_idea"}
-			available = { has_government = national_populist }
 			picture = GFX_idea_TEX_philipregent_idea
 			modifier = {
 				defence = 0.10

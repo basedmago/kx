@@ -66,6 +66,18 @@ spriteTypes = {
 		name = "GFX_idea_NEE_Federation_Idea"
 		texturefile = "gfx/interface/ideas/NEE/NEE_Federation_Idea.tga"
 	}
+	spriteType = {
+		name = "GFX_idea_NEE_washington_will_idea"
+		texturefile = "gfx/interface/ideas/NEE/NEE_washington_will_idea.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_NEE_kennedy_idea"
+		texturefile = "gfx/interface/ideas/NEE/NEE_kennedy_idea.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_NEE_astor_idea"
+		texturefile = "gfx/interface/ideas/NEE/NEE_astor_idea.tga"
+	}
 	### ALA ###
 	spriteType = {
 		name = "GFX_idea_ALA_alaska"
@@ -1096,7 +1108,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/TRM/TRM_legitimacy_none.tga"
 	}
 	###CathAUS###
-	
+	spriteType = {
+		name = "GFX_idea_TEX_basedcatholicsamiright"
+		texturefile = "gfx/interface/ideas/TEX/TEX_basedcatholicsamiright.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TEX_meekreformgang"
+		texturefile = "gfx/interface/ideas/TEX/TEX_meekreformgang.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TEX_radtradgang"
+		texturefile = "gfx/interface/ideas/TEX/TEX_radtradgang.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TEX_blessed_are_peacebois"
+		texturefile = "gfx/interface/ideas/TEX/TEX_blessed_are_peacebois.tga"
+	}
 	spriteType = {
 		name = "GFX_idea_TEX_christ_the_king"
 		texturefile = "gfx/interface/ideas/TEX/TEX_christ_the_king.dds"

@@ -8769,6 +8769,47 @@ news_event = { #Pelley seizes control of the AUS
 	}
 }
 
+news_event = { #O'Daniel brings Texas into the saddle
+	id = worldnews.2040
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.2040" }
+	title = worldnews.2040.t
+	desc = worldnews.2040.d
+	picture = GFX_TEX_pappy_news
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+		wants_world_news = yes
+		has_country_leader = {
+				ruling_only = yes
+				name = "W. Lee O'Daniel"
+				}
+		NOT = {
+			tag = TEX
+		}
+	}
+	show_major = {
+		OR = {
+			regional_europe_news = yes
+			regional_north_america_news = yes
+			regional_south_america_news = yes
+		}
+	}
+	option = {
+		name = worldnews.2040.a
+		trigger = {
+			NOT = {
+				has_socialist_government = yes
+			}
+		}
+	}
+	option = {
+		name = worldnews.2040.b
+		trigger = {
+			has_socialist_government = yes
+		}
+	}
+}
+
 news_event = { #The birth of the democratic CSA
 	id = worldnews.1013
 	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.1013" }
@@ -10291,6 +10332,150 @@ news_event = {
 		name = worldnews.556.a
 	}
 }
+# reformist victory
+news_event = {
+	id = worldnews.557
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.554" }
+	title = worldnews.557.t
+	desc = worldnews.557.d
+	picture = GFX_news_event_TEX_triumph
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+	show_major = {
+		regional_europe_news = yes
+	}
+
+	option = {
+		name = worldnews.557.a
+	}
+}
+# moderate victory
+news_event = {
+	id = worldnews.558
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.554" }
+	title = worldnews.558.t
+	desc = worldnews.558.d
+	picture = GFX_news_event_TEX_triumph
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+	show_major = {
+		regional_europe_news = yes
+	}
+
+	option = {
+		name = worldnews.558.a
+	}
+}
+# hardliner victory victory
+news_event = {
+	id = worldnews.559
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.554" }
+	title = worldnews.559.t
+	desc = worldnews.559.d
+	picture = GFX_news_event_TEX_triumph
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+	show_major = {
+		regional_europe_news = yes
+	}
+
+	option = {
+		name = worldnews.559.a
+	}
+}
+# Joe's coup
+news_event = {
+	id = worldnews.560
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.554" }
+	title = worldnews.560.t
+	desc = worldnews.560.d
+	picture = GFX_news_event_USA_americans_marching
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+	show_major = {
+		regional_europe_news = yes
+	}
+
+	option = {
+		name = worldnews.560.a
+	}
+}
+# enternal regency
+news_event = {
+	id = worldnews.561
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.554" }
+	title = worldnews.561.t
+	desc = worldnews.561.d
+	picture = GFX_news_event_TEX_triumph
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+	show_major = {
+		regional_europe_news = yes
+	}
+
+	option = {
+		name = worldnews.561.a
+	}
+}
+# inguartion of Phillp Carroll
+news_event = {
+	id = worldnews.562
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews.554" }
+	title = worldnews.562.t
+	desc = worldnews.562.d
+	picture = GFX_news_event_ITA_parliament
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+	show_major = {
+		regional_europe_news = yes
+	}
+
+	option = {
+		name = worldnews.562.a
+	}
+}	
 # Red Flood
 country_event = {
    id = worldnews.2453
