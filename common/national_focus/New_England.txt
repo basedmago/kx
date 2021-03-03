@@ -1079,6 +1079,7 @@ focus_tree = {
 			CAN = {
 			country_event = newengland.12
 			}
+			remove_ideas = NEE_limited_recognation1
 		}
 	}
 
@@ -7763,7 +7764,7 @@ focus = {
 #Focus for City on a Hill
 focus = {
 	id = NEE_moral_charachter
-	icon = GFX_ITA_trad
+	icon = GFX_NEE_nonrosary_for_protestant_fucks
 	cost = 5
 	prerequisite = { focus = NEE_ban_porn }
 	relative_position_id = NEE_prohibition_victory
@@ -8897,6 +8898,7 @@ focus = {
 		add_state_core = 360
 		add_state_core = 358
 		add_state_core = 359
+		add_state_core = 1162 
 	}
 }
 
@@ -9330,7 +9332,7 @@ focus = {
 	
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus NEE_washingtonian_monarchys"
-		add_stability  0.09
+		add_stability = 0.09
 		add_political_power = 100
 		add_war_support = 0.05
 	}
@@ -9540,7 +9542,7 @@ focus = {
 		focus = NEE_house_kennedy
 	}
 	relative_position_id = NEE_a_monarchy_for_new_england
-	mutually_exclusive = { focus = NEE_house_kennedy }
+
 	x = 0
 	y = 2
 	
@@ -9548,7 +9550,7 @@ focus = {
 	
 	available = {
 		has_country_flag = NEE_REBELLION_READY
-		has_country_flag = NEE_WASHINGTON_MYTH
+		has_country_flag = NEE_ELITE_MONARCHY
 		has_government = paternal_autocrat
 	}	
 	
@@ -9568,7 +9570,7 @@ focus = {
 	cost = 5
 	prerequisite = { focus = NEE_formal_nobility }
 	relative_position_id = NEE_a_monarchy_for_new_england
-	mutually_exclusive = { focus = NEE_house_kennedy }
+
 	x = -1
 	y = 3
 	
@@ -9576,7 +9578,7 @@ focus = {
 	
 	available = {
 		has_country_flag = NEE_REBELLION_READY
-		has_country_flag = NEE_WASHINGTON_MYTH
+		has_country_flag = NEE_ELITE_MONARCHY
 		has_government = paternal_autocrat
 	}	
 	
@@ -9607,7 +9609,7 @@ focus = {
 	prerequisite = { focus = NEE_formal_nobility }
 	prerequisite = { focus = NEE_monarchist_revival }
 	relative_position_id = NEE_a_monarchy_for_new_england
-	mutually_exclusive = { focus = NEE_house_kennedy }
+
 	x = 1
 	y = 3
 	
@@ -9615,7 +9617,7 @@ focus = {
 	
 	available = {
 		has_country_flag = NEE_REBELLION_READY
-		has_country_flag = NEE_WASHINGTON_MYTH
+		has_country_flag = NEE_ELITE_MONARCHY
 		has_government = paternal_autocrat
 	}	
 	
@@ -9641,7 +9643,7 @@ focus = {
 	prerequisite = { focus = NEE_new_england_alone }
 	prerequisite = { focus = NEE_british_modeled_monarchy }
 	relative_position_id = NEE_a_monarchy_for_new_england
-	mutually_exclusive = { focus = NEE_house_kennedy }
+	
 	x = 0
 	y = 4
 	
@@ -9649,7 +9651,7 @@ focus = {
 	
 	available = {
 		has_country_flag = NEE_REBELLION_READY
-		has_country_flag = NEE_WASHINGTON_MYTH
+		has_country_flag = NEE_ELITE_MONARCHY
 		has_government = paternal_autocrat
 	}	
 	
